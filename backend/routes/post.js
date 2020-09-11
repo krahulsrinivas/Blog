@@ -28,6 +28,6 @@ router.route("/search").get((req,res)=>{
             "body": 1
           }
         }
-      ]).then((posts)=>res.json(posts)).catch((err)=>res.json(err))
+      ]).then((posts)=>res.json(posts)).catch((e)=>res.json(e))
 });
 module.exports=router;
